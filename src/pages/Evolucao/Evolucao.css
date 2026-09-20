@@ -1,0 +1,123 @@
+
+.evolution {
+  padding: 120px 0;
+  background: linear-gradient(180deg, #0B1026 0%, #121C4D 35%, #1B39AD 70%, #2747C7 100%);
+  box-shadow: inset 0 50px 50px -50px rgba(0, 0, 0, 0.7), inset 0 -50px 50px -50px rgba(0, 0, 0, 0.7);
+}
+.evolution .section-title {
+  display: inline-block;
+  color: #457CFF;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.evolution .section-description {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 auto 24px;
+  line-height: 1.2;
+  max-width: 800px;
+}
+.evolution .evolution-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.evolution .stage {
+  text-align: center;
+}
+.evolution .stage img {
+  width: 350px;
+  image-rendering: pixelated;
+  transition: 0.3s;
+}
+.evolution .stage:hover img {
+  transform: translateY(-10px);
+}
+.evolution .stage h3 {
+  color: #E8F1F2;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.evolution .stage p {
+  color: #E8F1F2;
+  opacity: 0.8;
+  font-size: 20px;
+  margin-top: 8px;
+}
+.evolution .stage {
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+.evolution .evolution-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.evolution .progress-line {
+  position: absolute;
+  top: 40%;
+  left: -15vw;
+  height: 6px;
+  width: 0;
+  z-index: 1;
+  background: repeating-linear-gradient(90deg, #1B88E0 0 10px, transparent 10px 20px);
+  box-shadow: 0 0 10px #1B88E0, 0 0 20px #1B88E0, 0 0 40px #1B88E0;
+}
+
+.progress-line.animate {
+  animation: drawLine 3.5s ease forwards;
+}
+
+.egg.show {
+  animation: fadeUp 0.8s forwards;
+}
+
+.baby.show {
+  animation: fadeUp 0.8s forwards;
+}
+
+.adult.show {
+  animation: fadeUp 0.8s forwards;
+}
+
+.stage img {
+  animation: floatPixel 2s ease-in-out infinite;
+}
+
+@keyframes floatPixel {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 150%;
+  }
+}
