@@ -68,3 +68,23 @@
     font-size: 14px;
   }
 }
+
+.neon-vazado {
+  color: transparent !important;
+  -webkit-text-stroke: 1.5px #00d2ff;
+  filter: drop-shadow(0 0 5px #00d2ff);
+  transition: all 0.3s ease;
+}
+
+/*
+
+ISSO AQUI É PARA DAR ESPAÇO ENTRE O HEADER E OS CARDS, SE PRECISAR É SÓ DESCOMENTAR
+
+.Cards-hero {
+  margin-top: 60px;
+  padding: 0 0 40px;
+  position: relative;
+  z-index: 1;
+}
+
+*/
