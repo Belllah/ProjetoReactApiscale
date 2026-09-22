@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import './Header.css';
+import Sobre from "../../pages/Sobre/sobre";
 export default function Header(){
     return(
         <header>
@@ -16,7 +17,7 @@ export default function Header(){
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto gap-lg-3">
                         <li className="nav-item"><Link className="nav-link" to="/">Início</Link></li>
-                        <li className="nav-item"><a className="nav-link" to="#sobre">Sobre</a></li>
+                        <li className="nav-item"><Link className="nav-link" to="#sobre">Sobre</Link></li>
                         <li className="nav-item"><a className="nav-link" to="#ferramentas">Ferramentas</a></li>
                         <li className="nav-item"><a className="nav-link" to="#jornadas">Jornadas</a></li>
                         <li className="nav-item"><Link className="nav-link" to="./assets/pages/Suporte.html">Suporte</Link>
