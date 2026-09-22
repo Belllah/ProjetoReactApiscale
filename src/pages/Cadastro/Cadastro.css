@@ -1,0 +1,337 @@
+.cadastro-page {
+  --cor-fundo: #13293d;
+  --cor-card: #0f172a;
+  --azul-principal: #3b82f6;
+  --azul-escuro: #1b39ad;
+  --azul-claro: #457cff;
+  --verde-agua: #009694;
+  --texto-principal: #e8f1f2;
+  --texto-suave: #b7c8d0;
+  --cor-borda: rgba(69, 124, 255, 0.24);
+  --sombra-card: 0 16px 40px rgba(0, 0, 0, 0.32);
+  --borda-arredondada: 16px;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 42px 18px;
+  isolation: isolate;
+  box-sizing: border-box;
+  color: var(--texto-principal);
+  background: var(--cor-fundo);
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.cadastro-page *,
+.cadastro-page *::before,
+.cadastro-page *::after {
+  box-sizing: border-box;
+}
+
+.cadastro-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cadastro-page button,
+.cadastro-page input {
+  font: inherit;
+}
+
+.cadastro-page .auth-shell {
+  width: min(1120px, 100%);
+  min-height: calc(100vh - 84px);
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.cadastro-page .signup-shell {
+  width: min(840px, 100%);
+}
+
+.cadastro-page .auth-card {
+  position: relative;
+  width: 100%;
+  padding: 32px;
+  overflow: hidden;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--borda-arredondada);
+  background: var(--cor-card);
+  box-shadow: var(--sombra-card);
+}
+
+.cadastro-page .signup-card {
+  padding: 34px clamp(22px, 5vw, 42px);
+}
+
+.cadastro-page .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 240px;
+  margin-bottom: 24px;
+  transition: opacity 0.2s ease;
+}
+
+.cadastro-page .brand:hover {
+  opacity: 0.86;
+}
+
+.cadastro-page .brand img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.cadastro-page .brand-text {
+  font-family: "Montserrat", "Inter", Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+.cadastro-page .auth-heading {
+  margin-bottom: 26px;
+}
+
+.cadastro-page .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: var(--azul-claro);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.cadastro-page .eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--verde-agua);
+}
+
+.cadastro-page h1,
+.cadastro-page p {
+  margin-top: 0;
+}
+
+.cadastro-page h1 {
+  margin-bottom: 12px;
+  font-size: clamp(1.8rem, 4vw, 2.45rem);
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.cadastro-page .auth-heading p,
+.cadastro-page .auth-footer {
+  color: var(--texto-suave);
+  line-height: 1.7;
+}
+
+.cadastro-page .auth-form {
+  display: grid;
+  gap: 18px;
+}
+
+.cadastro-page .field {
+  display: grid;
+  gap: 8px;
+}
+
+.cadastro-page .field label {
+  color: #dcecff;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.cadastro-page .field input {
+  width: 100%;
+  min-height: 52px;
+  border: 1px solid rgba(69, 124, 255, 0.22);
+  border-radius: 10px;
+  outline: none;
+  color: var(--texto-principal);
+  background: #13293d;
+  padding: 0 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cadastro-page .field input::placeholder {
+  color: rgba(169, 184, 204, 0.62);
+}
+
+.cadastro-page .field input:focus {
+  border-color: var(--azul-claro);
+  background: #0f172a;
+  box-shadow: 0 0 0 3px rgba(69, 124, 255, 0.18);
+}
+
+.cadastro-page .auth-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--texto-principal);
+  font-weight: 700;
+  letter-spacing: 0;
+  transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.cadastro-page .auth-btn:hover {
+  opacity: 0.9;
+}
+
+.cadastro-page .auth-btn-primary {
+  background: var(--azul-principal);
+  box-shadow: none;
+}
+
+.cadastro-page .auth-btn-primary:hover {
+  background: var(--azul-escuro);
+}
+
+.cadastro-page .auth-footer {
+  margin: 22px 0 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.cadastro-page .auth-footer a {
+  color: var(--azul-claro);
+  font-weight: 800;
+}
+
+.cadastro-page .auth-footer a:hover {
+  text-decoration: underline;
+}
+
+.cadastro-page .account-toggle {
+  display: grid;
+  gap: 20px;
+}
+
+.cadastro-page .account-toggle > input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cadastro-page .toggle-control {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 54px;
+  padding: 5px;
+  border: 1px solid rgba(69, 124, 255, 0.28);
+  border-radius: 12px;
+  background: #13293d;
+}
+
+.cadastro-page .toggle-control label {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--texto-suave);
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition: color 0.22s ease;
+}
+
+.cadastro-page .toggle-indicator {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(50% - 5px);
+  height: calc(100% - 10px);
+  border-radius: 8px;
+  background: var(--azul-principal);
+  box-shadow: none;
+  transition: transform 0.28s ease;
+}
+
+.cadastro-page #person-fisica:checked ~ .toggle-control label[for="person-fisica"],
+.cadastro-page #person-juridica:checked ~ .toggle-control label[for="person-juridica"] {
+  color: #ffffff;
+}
+
+.cadastro-page #person-juridica:checked ~ .toggle-control .toggle-indicator {
+  transform: translateX(100%);
+}
+
+.cadastro-page .signup-panels {
+  display: grid;
+}
+
+.cadastro-page .fields-panel {
+  grid-area: 1 / 1;
+  display: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  animation: panelReveal 0.28s ease both;
+}
+
+.cadastro-page #person-fisica:checked ~ .signup-panels .physical-panel,
+.cadastro-page #person-juridica:checked ~ .signup-panels .company-panel {
+  display: grid;
+}
+
+.cadastro-page .terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--texto-suave);
+  font-size: 0.94rem;
+  line-height: 1.4;
+}
+
+.cadastro-page .terms input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--verde-agua);
+}
+
+@keyframes panelReveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .cadastro-page {
+    padding: 24px 14px;
+  }
+
+  .cadastro-page .auth-shell {
+    min-height: calc(100vh - 48px);
+  }
+
+  .cadastro-page .fields-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .cadastro-page .brand {
+    max-width: 210px;
+  }
+}

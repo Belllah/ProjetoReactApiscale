@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom";
 import './Header.css';
-import Sobre from "../../pages/Sobre/sobre";
 export default function Header(){
     return(
         <header>
@@ -20,12 +19,12 @@ export default function Header(){
                         <li className="nav-item"><Link className="nav-link" to="#sobre">Sobre</Link></li>
                         <li className="nav-item"><a className="nav-link" to="#ferramentas">Ferramentas</a></li>
                         <li className="nav-item"><a className="nav-link" to="#jornadas">Jornadas</a></li>
-                        <li className="nav-item"><Link className="nav-link" to="./assets/pages/Suporte.html">Suporte</Link>
+                        <li className="nav-item"><Link className="nav-link" to="/suporte">Suporte</Link>
                         </li>
                         <li className="nav-item"><Link className="nav-link" to="./assets/pages/planos.html">Planos</Link>
                         </li>
                     </ul>
-                    <Link to="./assets/pages/login.html"><button type="button" className="btn btn-comecar fw-bold">Começar
+                    <Link to="/cadastro"><button type="button" className="btn btn-comecar fw-bold">Começar
                             Agora</button></Link>
                 </div>
             </div>
