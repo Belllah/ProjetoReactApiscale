@@ -21,8 +21,6 @@ export default function Header(){
                         <li className="nav-item"><a className="nav-link" href="#jornadas">Jornadas</a></li>
                         <li className="nav-item"><Link className="nav-link" to="/suporte">Suporte</Link>
                         </li>
-                        <li className="nav-item"><Link className="nav-link" to="./assets/pages/planos.html">Planos</Link>
-                        </li>
                     </ul>
                     <Link to="/cadastro"><button type="button" className="btn btn-comecar fw-bold">Começar
                             Agora</button></Link>

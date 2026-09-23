@@ -174,7 +174,7 @@ function Cadastro() {
           </form>
 
           <p className="auth-footer">
-            Já possui acesso? <Link to="/login">Entrar na conta</Link>
+            Já possui acesso? <Link to="/">Entrar na conta</Link>
           </p>
         </article>
       </section>
