@@ -16,9 +16,9 @@ export default function Header(){
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto gap-lg-3">
                         <li className="nav-item"><Link className="nav-link" to="/">Início</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="#sobre">Sobre</Link></li>
-                        <li className="nav-item"><a className="nav-link" to="#ferramentas">Ferramentas</a></li>
-                        <li className="nav-item"><a className="nav-link" to="#jornadas">Jornadas</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#sobre">Sobre</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#ferramentas">Ferramentas</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#jornadas">Jornadas</a></li>
                         <li className="nav-item"><Link className="nav-link" to="/suporte">Suporte</Link>
                         </li>
                         <li className="nav-item"><Link className="nav-link" to="./assets/pages/planos.html">Planos</Link>
@@ -32,3 +32,4 @@ export default function Header(){
     </header>
     );
 }
+// onClick={(e) => { e.preventDefault(); document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' }); }}

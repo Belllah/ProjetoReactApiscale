@@ -1,0 +1,198 @@
+.secao-trilhas {
+  width: 100%;
+  padding: 80px 8%;
+  background-color: #0F172A;
+}
+
+.secao-trilhas .subtitulo-jornada {
+  display: inline-block;
+  color: #457CFF;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.secao-trilhas .titulo-jornada {
+  color: #E8F1F2;
+  font-size: 40px;
+  font-weight: 800;
+  max-width: 800px;
+  margin: 0 auto 24px;
+  line-height: 1.2;
+}
+
+.secao-trilhas .descricao-jornada {
+  color: rgba(232, 241, 242, 0.75);
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.secao-trilhas .container-trilhas {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Cards */
+.secao-trilhas .card-trilha {
+  width: 100%;
+  min-height: 280px;
+  background: linear-gradient(135deg, rgba(7, 18, 48, 0.95), rgba(3, 10, 28, 0.98));
+  border: 1px solid rgba(27, 136, 224, 0.35);
+  border-radius: 28px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(27, 136, 255, 0.08), inset 0 0 25px rgba(27, 136, 255, 0.04);
+  transition: 0.4s ease;
+}
+
+.secao-trilhas .card-trilha:hover {
+  transform: translateY(-5px);
+  border-color: rgba(69, 124, 255, 0.7);
+  box-shadow: 0 0 40px rgba(27, 136, 255, 0.2), inset 0 0 30px rgba(27, 136, 255, 0.06);
+}
+
+/* Card invertido */
+.secao-trilhas .card-trilha.direita {
+  flex-direction: row-reverse;
+}
+
+/* ÁREA DO DRAGÃO */
+.secao-trilhas .card-trilha .area-dragao {
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.secao-trilhas .card-trilha .area-dragao img {
+  width: 100%;
+  max-width: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(27, 136, 255, 0.45));
+}
+
+/* Conteúdo  */
+.secao-trilhas .card-trilha .conteudo-trilha {
+  flex: 1;
+}
+
+.secao-trilhas .card-trilha .conteudo-trilha .nivel {
+  display: inline-flex;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(27, 57, 173, 0.18);
+  border: 1px solid rgba(69, 124, 255, 0.45);
+  color: #457CFF;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.secao-trilhas .card-trilha .conteudo-trilha h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #E8F1F2;
+  margin-bottom: 14px;
+}
+
+.secao-trilhas .card-trilha .conteudo-trilha p {
+  color: rgba(232, 241, 242, 0.7);
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* BOTÃO */
+.secao-trilhas .card-trilha button {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(69, 124, 255, 0.5);
+  background: rgba(27, 57, 173, 0.18);
+  color: #E8F1F2;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.secao-trilhas .card-trilha button:hover {
+  background: #2B5293;
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(27, 136, 255, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .secao-trilhas {
+    padding: 40px 5%;
+  }
+
+  .secao-trilhas .titulo-jornada {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .secao-trilhas .card-trilha,
+  .secao-trilhas .card-trilha.direita {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .secao-trilhas .area-dragao {
+    width: 100%;
+  }
+
+  .secao-trilhas .conteudo-trilha p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .secao-trilhas {
+    padding: 40px 5%;
+  }
+
+  .secao-trilhas .titulo-jornada {
+    font-size: 28px;
+  }
+
+  .secao-trilhas .subtitulo-jornada {
+    font-size: 16px;
+  }
+
+  .secao-trilhas .descricao-jornada {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .secao-trilhas {
+    padding: 30px 5%;
+  }
+
+  .secao-trilhas .titulo-jornada {
+    font-size: 22px;
+  }
+
+  .secao-trilhas .subtitulo-jornada {
+    font-size: 14px;
+  }
+
+  .secao-trilhas .card-trilha .conteudo-trilha h2 {
+    font-size: 18px;
+  }
+
+  .secao-trilhas .card-trilha .conteudo-trilha p {
+    font-size: 16px;
+  }
+}

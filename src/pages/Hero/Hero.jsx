@@ -23,10 +23,10 @@ export default function Hero(){
                     </div>
 
                     <h1 className="hero-title">
-                        Planeje sua trajetória com
-                        <span className="text-highlight">estratégia</span>
+                        Planeje sua trajetória com 
+                        <span className="text-highlight"> estratégia </span>
                         e
-                        <span className="text-highlight">clareza</span>.
+                        <span className="text-highlight"> clareza</span>.
                     </h1>
 
                     <p className="hero-subtitle">
