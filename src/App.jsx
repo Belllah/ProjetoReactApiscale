@@ -6,14 +6,18 @@ import Hero from './pages/Hero/Hero.jsx';
 import Sobre from './pages/Sobre/sobre.jsx';
 import Suporte from './pages/Suporte/Suporte.jsx';
 import Cadastro from './pages/Cadastro/Cadastro.jsx';
+import CardHeroConteudo from './components/CardHero/CardHeroConteudo.jsx';
+import CardFerramentaConteudo from './components/CardFerramenta/CardFerramentaConteudo.jsx';
 
 function Home() {
   return (
     <>
       <Hero />
+      <CardHeroConteudo />
       <section id='sobre'>
         <Sobre />
       </section>
+      <CardFerramentaConteudo />
       <Evolucao />
     </>
   );

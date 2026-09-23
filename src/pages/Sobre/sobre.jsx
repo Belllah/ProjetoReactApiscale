@@ -3,60 +3,7 @@ import './sobre.css';
 export default function Sobre() {
   return (
     <section className="about-cards-background">
-      <section className="Cards-hero">
-        <div className="container">
-          <div className="row align-items-center justify-content-center">
-            <div className="d-flex justify-content-center col-md-4 col-12 text-center mb-3">
-              <div className="card card-hero h-100">
-                <div className="elipse-icon">
-                  <i className="bi bi-bar-chart-fill neon-vazado"></i>
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title">Acompanhamento de Progresso</h5>
-                  <p className="card-text">
-                    Visualize o avanço de cada colaborador em tempo real
-                    através de métricas, níveis de evolução e indicadores
-                    personalizados para cada jornada.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="d-flex justify-content-center col-md-4 col-12 text-center mb-3">
-              <div className="card card-hero h-100">
-                <div className="elipse-icon">
-                  <i className="bi bi-calendar-check-fill neon-vazado"></i>
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title">Trilhas Personalizadas</h5>
-                  <p className="card-text">
-                    Monte jornadas adaptáveis para diferentes cargos,
-                    equipes e objetivos, permitindo que a empresa evolua
-                    seus talentos de forma estratégica.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="d-flex justify-content-center col-md-4 col-12 text-center mb-3">
-              <div className="card card-hero h-100">
-                <div className="elipse-icon">
-                  <i className="bi bi-shield-lock-fill neon-vazado"></i>
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title">Gestão Segura de Dados</h5>
-                  <p className="card-text">
-                    Centralize informações, avaliações e desempenho dos
-                    colaboradores em um ambiente moderno, protegido e
-                    acessível para gestores e equipes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Seção Sobre */}
       <section id="sobre" className="about-section">
         <div className="container">
